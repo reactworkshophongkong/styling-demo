@@ -1,0 +1,22 @@
+
+.button {
+  font-weight: bold;
+  border-radius: 5px;
+  color: white;
+  margin-right: 10px;
+  font-size: 16px;
+  border: 1px solid white;
+  background-color: cornflowerblue
+}
+
+.button.large {
+  font-size: 20px;
+}
+
+.button.disabled {
+  background-color: lightgrey;
+}
+
+.button.secondary {
+  background-color: lightgreen;
+}
