@@ -1,0 +1,15 @@
+
+.tabContainer {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  width: fit-content;
+}
+
+.tabItem {
+  padding: 0 50px 5px 50px;
+}
+
+.tabItem.active {
+  font-weight: bold;
+  border-bottom: 4px solid black;
+}

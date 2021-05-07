@@ -1,30 +1,12 @@
-import styled from 'styled-components'
-import { Button } from './button-component.styles'
-import * as styles from './button.module.css'
+/*
+  accept props
+  size = large font size 20px medium 16px default to medium
+  buttonType = primary blue background color white text, secondary = white background color black text
+  disabled = grey background color
+*/
 
-const ExtendedButton = styled(Button)`
-  background-color: salmon;
-`
+const Button = () => {
 
-const ButtonDemo = () => {
-  return(
-    <div>
-      <section>
-        <p>Buttons using styled-components</p>
-        <Button size="large" onClick={() => alert('Howdy')}>Primary Large</Button>
-        <Button buttonType="secondary">Secondary</Button>
-        <Button buttonType="secondary" disabled>Disabled</Button>
-        <ExtendedButton size="large">Adding Additional Styles</ExtendedButton>
-      </section>
-
-      <section>
-        <p>Buttons using css modules</p>
-        <button className={`${styles.button} ${styles.large}`}>Primary Large</button>
-        <button className={`${[styles.button, styles.secondary].join(' ')}`}>Secondary</button>
-        <button disabled className={`${[styles.button, styles.disabled].join(' ')}`}>Disabled</button>
-      </section>
-    </div>
-  )
 }
 
-export { ButtonDemo }
+export { Button }
